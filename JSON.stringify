@@ -1,5 +1,5 @@
 const post = {
   title: 'My post',
-  takesQty: 5
+  lakesQty: 5
 }
 JSON.stringify (post)
