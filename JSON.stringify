@@ -1,5 +1,0 @@
-const post = {
-  title: 'My post',
-  lakesQty: 5
-}
-JSON.stringify (post)

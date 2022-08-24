@@ -1,0 +1,9 @@
+const post = {
+  title: 'My post',
+  takesQty: 5
+}
+JSON.stringify (post) // convert to line
+
+const postStringified = JSON.stringify(post)
+
+JSON.parse(postStringified) // convert to JSON
