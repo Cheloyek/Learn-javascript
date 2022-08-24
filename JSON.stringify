@@ -1,0 +1,5 @@
+const post = {
+  title: 'My post',
+  takesQty: 5
+}
+JSON.stringify (post)
