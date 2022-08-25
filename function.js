@@ -36,7 +36,7 @@ function anotherFunction() {
 }
 
 function fnWithCallback(callbackFunction){
-  callbackFunction()
+  callbackFunction() //callback function
 }
 fnWithCallback(anotherFunction)
 
