@@ -1,3 +1,5 @@
+//variant 1
+
 const name1 = {
   title: 'objecttitle1',
   name: 'objectname1'
@@ -37,3 +39,16 @@ console.log(object_two) /*
   title: 'objectname3'
 }
 */
+
+//variant 2
+
+const person = {
+  name: 'name1',
+  age:80
+}
+
+const person2 = {...person}
+person2.name = 'name2'
+
+console.log(person.name)
+console.log(person2.name)
