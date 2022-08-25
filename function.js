@@ -27,5 +27,15 @@ function increasePersonAge(person) {
 }
 
 const updatedPersonOne = increasePersonAge(personOne)
-console.log(personOne.age)
+console.log(personOne.age) // оригинальный объект не изменится
 console.log(updatedPersonOne.age)
+
+//callback function
+function anotherFunction() {
+  console.log('This is anotherFunction')
+}
+
+function fnWithCallback(callbackFunction){
+  callbackFunction()
+}
+fnWithCallback(anotherFunction)
