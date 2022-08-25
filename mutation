@@ -1,0 +1,39 @@
+const name1 = {
+  title: 'objecttitle1',
+  name: 'objectname1'
+}
+
+const name2 = Object.assign({}, name1)
+console.log(name1) //{ title: 'objecttitle1', name: 'objectname1' }
+console.log(name2) //{ title: 'objecttitle1', name: 'objectname1' }
+
+name2.title = 'objecttitle2'
+
+console.log(name1) //{ title: 'objecttitle1', name: 'objectname1' }
+console.log(name2) //{ title: 'objecttitle2', name: 'objectname1' }
+
+const object_one = {
+  name1 (){},
+  title: 'objectname3'
+  }
+
+console.log(name1)
+console.log(name2)
+console.log(object_one)
+
+const object_two = Object.assign ({}, object_one)
+object_two.name1.title = 'objecttitle3'
+console.log(name1)
+console.log(name2)
+console.log(object_one) /*
+{
+  name1: [Function: name1] { title: 'objecttitle3' },
+  title: 'objectname3'
+} 
+*/
+console.log(object_two) /* 
+{
+  name1: [Function: name1] { title: 'objecttitle3' },
+  title: 'objectname3'
+}
+*/
