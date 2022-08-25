@@ -52,3 +52,16 @@ person2.name = 'name2'
 
 console.log(person.name)
 console.log(person2.name)
+
+//variant 3
+
+const original = {
+  name: 'notStringify',
+  age:80
+}
+
+const clone = JSON.parse(JSON.stringify(person))
+clone.name = 'Stringify'
+
+console.log(original.name)
+console.log(clone.name)
