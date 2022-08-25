@@ -45,3 +45,6 @@ console.log('Name')
 }
 
 setTimeout(printMyName, 1000) // вызовет функцию через 1 сек.
+
+console.log('Start')
+setTimeout(printMyName, 1000) // добавит start и вызовет функцию через 1 сек.
