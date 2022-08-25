@@ -39,3 +39,9 @@ function fnWithCallback(callbackFunction){
   callbackFunction()
 }
 fnWithCallback(anotherFunction)
+
+function printMyName() {
+console.log('Name')
+}
+
+setTimeout(printMyName, 1000) // вызовет функцию через 1 сек.
