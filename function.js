@@ -21,9 +21,9 @@ const personOne = {
 }
 
 function increasePersonAge(person) {
-  const updatedPerson = Object.assign({}, person)
-  updatedPerson.age += 1
-  return updatedPerson
+  const updatedPerson = Object.assign({}, person) // updatedPerson = personOne
+  updatedPerson.age += 1 // age у updatedPerson = age+1 у personOne
+  return updatedPerson // возвращает updatedPerson = personOne
 }
 
 const updatedPersonOne = increasePersonAge(personOne)
