@@ -8,6 +8,13 @@ const blueButton = {
   color: 'blue' // добавляет к свойствам внутри объекта blueButton
 }
 
+//не разделяет объект на свойства, а добавляет к объекту объект
+const bButton = {
+  button,
+  color: 'b'
+}
+
 console.log(button) // не меняется
 console.log(blueButton) // свойства объекта button и добавление новых
 console.table(blueButton) // выводит свойства объекта в виде таблицы
+console.log(bButton)
