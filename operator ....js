@@ -18,3 +18,9 @@ console.log(button) // не меняется
 console.log(blueButton) // свойства объекта button и добавление новых
 console.table(blueButton) // выводит свойства объекта в виде таблицы
 console.log(bButton)
+
+const greenButton = {
+  ...blueButton, 
+  color: 'green' // у объекта blueButton уже есть свойство color, перезапишет его значение
+}
+console.log(greenButton)
