@@ -1,3 +1,4 @@
+//Пример 1
 const button = {
   width: 200,
   text: 'Buy'
@@ -27,6 +28,26 @@ console.log(greenButton)//{ width: 200, text: 'Buy', color: 'green' }
 
 const yellowButton = {
   color: 'yellow', // значение blue не перезапишется на значение yellow
-  ...blueButton // значение желтый будет перезаписано на blue
+  ...blueButton // Для перезаписания нужно использовать вначале объекта, значение yellow будет перезаписано на blue
 }
 console.log(yellowButton) //{ color: 'blue', width: 200, text: 'Buy' }
+
+
+//Пример 2 - необходимо соединить свойства объектов buttonInfo и buttonStyle
+const buttonInfo = {
+  text: 'Buy'
+}
+
+const buttonStyle = {
+  color: 'yellow',
+  height: 300
+}
+
+const joinButton = {
+  ...buttonInfo,
+  ...buttonStyle
+}
+
+console.log(buttonInfo) //{ text: 'Buy' }
+console.log(buttonStyle) //{ color: 'yellow', height: 300 }
+console.log(joinButton) //{ text: 'Buy', color: 'yellow', height: 300 }
