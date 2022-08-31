@@ -13,3 +13,4 @@ class Comment {
 
 // Создание экземпляра при помощи - new
 const firstComment = new Comment('First comment') // Comment - вызывает функцию constructor, которая создает новый экземпляр, наследующий все методы
+//Comment.prototype.constructor === Comment
