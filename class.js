@@ -14,3 +14,4 @@ class Comment {
 // Создание экземпляра при помощи - new
 const firstComment = new Comment('First comment') // Comment - вызывает функцию constructor, которая создает новый экземпляр, наследующий все методы
 //Comment.prototype.constructor === Comment
+// при применении firstComment.upvote() значение votesQty увеличится на 1, тк вызвали однократно. При следующем вызове firstComment.upvote() значение votesQty увеличится
