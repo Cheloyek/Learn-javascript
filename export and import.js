@@ -22,15 +22,17 @@ const one = 1
 const two = 'two'
 
 export {
-one,
-two
+  one,
+  two
 }
 
 //file 2
 import {
   one, // имена переменных должны совпадать
+  //для переименования можно записать one as oneRenamed
   two
 } from './file 1.js'
 
 console.log(one) // 1
 console/log(two) // 'two'
+console.log(oneRenamed) // для примера с переименованием переменной при импорте
