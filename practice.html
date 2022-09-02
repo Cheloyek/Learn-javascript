@@ -12,7 +12,7 @@
   Lorem ipsum dolor sit amet.
 </textarea>
 <div>
-  <img src="https://vjoy.cc/krasivye-kartinki-besplatno-skachat-40-foto/">
+  <img id='imgId' src="https://vjoy.cc/krasivye-kartinki-besplatno-skachat-40-foto/">
 </div>
 
 <script>
@@ -21,6 +21,7 @@
   var adressElement = document.getElementById('adressId')
   var citiesElement = document.getElementById('citiesId')
   var textareaElement = document.getElementById('textareaId')
+  var imgElement = document.getElementById('imgId')
 
   alert(firstNameElement.value)
   alert(secondNameElement.value)
@@ -28,6 +29,7 @@
   alert(citiesElement.value) //city 2 - выведет значение по умолчанию (selected)
   alert(citiesElement.innerHTML) //выведет содержимое select
   alert(textareaElement.value) //value = содержимое textarea
+  alert(imgElement.src) //выведет ссылку на img
 
 
 </script>
