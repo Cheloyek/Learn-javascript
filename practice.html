@@ -1,28 +1,32 @@
 <input value='firstName' class='firstName' id='firstId'>
 <input value='secondName' class='secondName' id='secondId'>
 <input value='adress' class='adress' id='adressId'>
-<h1>
+
  <select name="Cities" id="citiesId">
   <option> City 1</option>
-  <option selected="select"> City 2</option>
+  <option selected="selected"> City 2</option>
   <option> City 3</option>
  </select>
-</h1>
 
+<textarea id="textareaId" cols="30" rows="10">
+  Lorem ipsum dolor sit amet.
+</textarea>
 
 <script>
-var firstNameElement
-var secondNameElement
-var adressElement
+  var firstNameElement
+  var secondNameElement
+  var adressElement
 
-firstNameElement = document.getElementById('firstId')
-secondNameElement = document.getElementById('secondId')
-adressElement = document.getElementById('adressId')
+  firstNameElement = document.getElementById('firstId')
+  secondNameElement = document.getElementById('secondId')
+  adressElement = document.getElementById('adressId')
+  citiesElement = document.getElementById('citiesId')
+  textareaElement = document.getElementById('textareaId')
 
-alert(firstNameElement.value)
-alert(secondNameElement.value)
-alert(adressElement.value)
-alert(Cities.selected)
-
+  alert(firstNameElement.value)
+  alert(secondNameElement.value)
+  alert(adressElement.value)
+  alert(citiesElement.value) //city 2 - выведет значение по умолчанию (selected)
+  alert(textareaElement.value) //выведет - Lorem ipsum dolor sit amet.
 
 </script>
