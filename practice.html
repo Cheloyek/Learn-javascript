@@ -2,7 +2,11 @@
 <input value='secondName' class='secondName' id='secondId'>
 <input value='adress' class='adress' id='adressId'>
 <h1>
- 
+ <select name="Cities" id="citiesId">
+  <option> City 1</option>
+  <option selected="select"> City 2</option>
+  <option> City 3</option>
+ </select>
 </h1>
 
 
@@ -18,6 +22,7 @@ adressElement = document.getElementById('adressId')
 alert(firstNameElement.value)
 alert(secondNameElement.value)
 alert(adressElement.value)
+alert(Cities.selected)
 
 
 </script>
