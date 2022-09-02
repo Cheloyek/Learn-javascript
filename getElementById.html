@@ -1,0 +1,15 @@
+<input value='hello' class='hello-message' id='helloMessage-id'>
+
+<script>
+  var helloMessageId;
+  var helloMessageElement;
+ 
+  helloMessageId = 'helloMessage-id';
+
+  helloMessageElement = document.getElementById(helloMessageId)// возвращает ссылку на элемент по его идентификатору, ищет значение id='helloMessage-id'
+
+  alert(helloMessageElement.value) //hello
+  alert(helloMessageElement.className) //hello-message
+  alert(helloMessageElement.id) //helloMessage-id
+
+</script>
