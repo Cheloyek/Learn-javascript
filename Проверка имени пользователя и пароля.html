@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+//запрос userName
+let userName = prompt("Кто там?", '');
+
+if (userName === 'Админ') {
+  //если userName = Админ - запрос пароля
+  let pass = prompt('Пароль?', '');
+  
+  if (pass === 'Я главный') {
+    alert( 'Здравствуйте!' ); //если пароль Я главный
+  } else if (pass === '' || pass === null) {
+    alert( 'Отменено' ); //если ввод пароля отменен
+  } else {
+    alert( 'Неверный пароль' ); //если пароль введен не правильно
+  }
+  //если ввод userName отменен
+} else if (userName === '' || userName === null) {
+  alert( 'Отменено' );
+} else {
+  alert( "Я вас не знаю" ); //если userName введен не Админ
+}
+</script>
