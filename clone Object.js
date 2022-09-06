@@ -1,4 +1,5 @@
 //если ссылки на объект не достаточно, можно применить клонирование объекта
+//variant 1
 let user = {
   name: "John",
   age: 30
@@ -15,3 +16,12 @@ for (let key in user) {
 clone.name = "Pete"; // изменение данных в клоне
 
 alert( user.name ); // John в первоначальном объекте
+
+
+//variant 2
+let user = {
+  name: "John",
+  age: 30
+};
+
+let clone = Object.assign({}, user);
