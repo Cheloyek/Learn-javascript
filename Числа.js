@@ -24,3 +24,7 @@ let sum = 0.1 + 0.2;
 alert( sum.toFixed(2) ); // 0.30 - строка
 
 alert( +sum.toFixed(2) ); // 0.3 - число
+
+//функции проверки infinity и NaN
+alert( isNaN(NaN) ); // true
+alert( isNaN("str") ); // true
