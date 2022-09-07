@@ -26,5 +26,11 @@ alert( sum.toFixed(2) ); // 0.30 - строка
 alert( +sum.toFixed(2) ); // 0.3 - число
 
 //функции проверки infinity и NaN
+//isNaN(value) преобразует значение в число и проверяет является ли оно NaN:
 alert( isNaN(NaN) ); // true
 alert( isNaN("str") ); // true
+
+//isFinite(value) преобразует аргумент в число и возвращает true, если оно является обычным числом, т.е. не NaN/Infinity/-Infinity:
+alert( isFinite("15") ); // true
+alert( isFinite("str") ); // false, потому что специальное значение: NaN
+alert( isFinite(Infinity) ); // false, потому что специальное значение: Infinity
