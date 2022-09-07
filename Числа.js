@@ -41,3 +41,6 @@ let num = +prompt("Enter a number", '');
 alert( isFinite(num) );
 
 //пустая строка интерпретируется как 0 во всех числовых функциях, включаяisFinite.
+
+//Number.isNaN(value) возвращает true только в том случае, если аргумент принадлежит к типу number и является NaN. Во всех остальных случаях возвращает false.
+//Number.isFinite(value) возвращает true только в том случае, если аргумент принадлежит к типу number и не является NaN/Infinity/-Infinity. Во всех остальных случаях возвращает false.
