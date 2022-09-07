@@ -34,3 +34,8 @@ alert( isNaN("str") ); // true
 alert( isFinite("15") ); // true
 alert( isFinite("str") ); // false, потому что специальное значение: NaN
 alert( isFinite(Infinity) ); // false, потому что специальное значение: Infinity
+
+//isFinite используется для проверки содержится ли в строке число
+let num = +prompt("Enter a number", '');
+// вернёт true всегда, кроме ситуаций, когда аргумент - Infinity/-Infinity или не число
+alert( isFinite(num) );
