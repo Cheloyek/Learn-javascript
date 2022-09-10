@@ -22,6 +22,11 @@ reportWebVitals();
 let b = 1;
 b = "string" //не присвоит, тк b это число
 
+let c;
+c = 1; // Присвоит
+c = "sting"; // Присвоит
+c = true; // Присвоит
+
 
 
 
